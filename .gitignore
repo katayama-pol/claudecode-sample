@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.log
+
+# Hooks デモが書き出すログ（デモ実行のたびに増える一時ファイル）
+.claude/edit-log.txt

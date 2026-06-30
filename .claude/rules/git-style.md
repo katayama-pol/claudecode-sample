@@ -1,7 +1,3 @@
----
-description: Git / コミット規約（常時ロード）
----
-
 # Git / コミット規約
 
 このファイルも `.claude/rules/` に置かれた **Rules** です。

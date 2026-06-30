@@ -1,5 +1,4 @@
 ---
-description: TypeScript コーディング規約（src 配下を読むときにロードされる）
 paths:
   - "src/**/*.ts"
 ---

@@ -11,8 +11,8 @@ model: sonnet
 ## レビュー手順
 
 1. `git diff`（および必要なら `git diff --staged`）で変更内容を把握する。
-2. プロジェクト規約（@.claude/rules/coding-style.md, @.claude/rules/git-style.md）に
-   照らして問題がないか確認する。特に以下を重点的に見る:
+2. プロジェクト規約（`.claude/rules/coding-style.md`, `.claude/rules/git-style.md`）を
+   Read で読み、照らして問題がないか確認する。特に以下を重点的に見る:
    - インデント2スペース / セミコロン / `any` の不使用 / import の `.ts` 拡張子
    - データアクセスが store.ts 経由になっているか
    - ユーザー向けメッセージが日本語か

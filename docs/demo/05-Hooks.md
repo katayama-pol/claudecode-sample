@@ -2,11 +2,20 @@
 
 ## どんな機能か
 
-Hook（フック）は、Claude のツール実行（ファイル編集・コマンド実行など）の**前後に、
+Hook（フック）は、Claude Code の**ライフサイクルの各イベントで、
 自分で書いたスクリプトを自動で差し込む**仕組みです。Claude の判断に依存せず、
 **機械的に・確実に**処理を強制できるのが最大の特徴です。
 
-このデモには2つのフックを仕込んであります（設定: [.claude/settings.json](../../.claude/settings.json)）。
+発動できるイベントはツール実行の前後だけではありません。主なものは以下:
+
+- `PreToolUse` / `PostToolUse` … ツール実行の直前 / 直後
+- `UserPromptSubmit` … ユーザーがプロンプトを送信したとき
+- `Stop` / `SubagentStop` … 応答の停止時 / サブエージェントの停止時
+- `SessionStart` / `SessionEnd` … セッションの開始 / 終了
+- `Notification` … 通知が出るとき / `PreCompact` … 文脈圧縮の直前
+
+このデモでは、最も分かりやすい **ツール実行の前後（PreToolUse / PostToolUse）** の
+2つのフックを仕込んであります（設定: [.claude/settings.json](../../.claude/settings.json)）。
 
 | フック | タイミング | 中身 |
 |---|---|---|

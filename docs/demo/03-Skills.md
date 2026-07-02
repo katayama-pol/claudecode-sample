@@ -11,7 +11,9 @@ Claude がその手順どおりに作業します。
   - **明示的**: `/new-command` のようにスラッシュで呼ぶ。
   - **自動**: SKILL.md の `description` に合う作業だと Claude 自身が判断して呼ぶこともある。
 - 置き場所: [.claude/skills/new-command/SKILL.md](../../.claude/skills/new-command/SKILL.md)。
-  フロントマターの `name` / `description` で「いつ使うか」を定義する。
+  スラッシュコマンド名は .claude/skills/new-command/ のディレクトリ名から /new-command になる。
+  `description` / `when_to_use` が自動発動の判断材料になる。
+  `name` は表示名として使われる。
 
 ## 打つプロンプト
 
